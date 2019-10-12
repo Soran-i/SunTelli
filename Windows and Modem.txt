@@ -1,0 +1,10 @@
+Connecting to modem while on Windows:
+
+- Download+setup Ubuntu from Windows Store
+- Plug in modem to any USB port
+- Go to Windows Device Manager -> Ports (COM & LPT) and find the USB port number
+- Go into Ubuntu terminal
+- Type the following:
+
+chmod 666 /dev/ttyS[INSERT COM # HERE]
+screen /dev/ttyS[INSERT COM # HERE] [INSERT BAUD RATE HERE -> SHOULD BE 9600]
